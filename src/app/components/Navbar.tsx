@@ -56,6 +56,7 @@ export function Navbar() {
             <Link to="/" className="hover:text-emerald-200 transition">Inicio</Link>
             <Link to="/categorias" className="hover:text-emerald-200 transition">Categorías</Link>
             <Link to="/ofertas" className="hover:text-emerald-200 transition">Ofertas</Link>
+            <Link to="/contacto" className="hover:text-emerald-200 transition">Contacto</Link>
 
             <Link to="/carrito" className="relative hover:text-emerald-200 transition">
               <ShoppingCart className="w-6 h-6" />
