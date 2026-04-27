@@ -48,8 +48,19 @@ export function AdminDashboard() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-gray-800 mb-2">Panel de Administración</h1>
-      <p className="text-gray-600 mb-8">Bienvenido, {user.name}</p>
+      <div className="flex justify-between items-center mb-2">
+        <div>
+          <h1 className="text-4xl font-bold text-gray-800">Panel de Administración</h1>
+          <p className="text-gray-600">Bienvenido, {user.name}</p>
+        </div>
+        <button
+          onClick={() => navigate('/agregar-producto')}
+          className="flex items-center gap-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition"
+        >
+          <Plus className="w-5 h-5" />
+          Agregar Producto
+        </button>
+      </div>
 
       <div className="flex gap-2 mb-8 border-b border-gray-200">
         <button
