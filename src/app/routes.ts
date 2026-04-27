@@ -16,6 +16,8 @@ import { Offers } from './pages/Offers';
 import { Contact } from './pages/Contact';
 import { Search } from './pages/Search';
 
+import { Agregar_productos } from './pages/Agregar_productos';
+
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -33,6 +35,7 @@ export const router = createBrowserRouter([
       { path: 'orden-completada', Component: OrderComplete },
       { path: 'dashboard', Component: CustomerDashboard },
       { path: 'admin', Component: AdminDashboard },
+      { path: 'agregar-producto', Component: Agregar_productos },
       { path: 'ofertas', Component: Offers },
       { path: 'contacto', Component: Contact },
       { path: 'search', Component: Search }

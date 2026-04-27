@@ -57,6 +57,7 @@ export function Navbar() {
             <Link to="/categorias" className="hover:text-emerald-200 transition">Categorías</Link>
             <Link to="/ofertas" className="hover:text-emerald-200 transition">Ofertas</Link>
             <Link to="/contacto" className="hover:text-emerald-200 transition">Contacto</Link>
+            <Link to="/agregar-producto" className="hover:text-emerald-200 transition">Agregar productos</Link>
 
             <Link to="/carrito" className="relative hover:text-emerald-200 transition">
               <ShoppingCart className="w-6 h-6" />
@@ -117,6 +118,7 @@ export function Navbar() {
               <Link to="/categorias" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-200 transition">Categorías</Link>
               <Link to="/ofertas" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-200 transition">Ofertas</Link>
               <Link to="/contacto" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-200 transition">Contacto</Link>
+              <Link to="/agregar-producto" onClick={() => setMobileMenuOpen(false)} className="hover:text-emerald-200 transition">Agregar productos</Link>
               <Link to="/carrito" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2 hover:text-emerald-200 transition">
                 <ShoppingCart className="w-6 h-6" />
                 Carrito {cartItemsCount > 0 && `(${cartItemsCount})`}
